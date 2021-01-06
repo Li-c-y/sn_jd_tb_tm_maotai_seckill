@@ -6,5 +6,6 @@ do
     git commit -am "$t"
     git push
     random=$(( (RANDOM % 600) + 60 ))
+    echo random is $random
     sleep $random
 done
