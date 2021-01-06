@@ -5,5 +5,6 @@ do
     git add ./*
     git commit -am "$t"
     git push
-    sleep 5
+    random=$(( (RANDOM % 600) + 60 ))
+    sleep $random
 done
